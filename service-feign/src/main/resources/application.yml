@@ -1,8 +1,8 @@
 # 端口号
 server:
-  port: 8763
+  port: 8765
   servlet:
-    context-path: /eureka-provider
+    context-path: /service-feign
 # 服务注册与发现相关配置
 eureka:
   client:
@@ -13,7 +13,7 @@ eureka:
     enable-self-preservation: true
 spring:
   application:
-    name: eureka-provider
+    name: service-feign
   security:
     user:
       name: admin
