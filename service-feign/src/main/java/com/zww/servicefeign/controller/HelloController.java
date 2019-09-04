@@ -1,8 +1,8 @@
 package com.zww.servicefeign.controller;
 
 import com.zww.servicefeign.service.IServiceHi;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -20,7 +20,7 @@ public class HelloController {
     @Resource
     private IServiceHi serviceHi;
 
-    @GetMapping("/hello")
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
         return serviceHi.sayHi();
     }
