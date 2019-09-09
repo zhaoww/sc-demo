@@ -1,0 +1,26 @@
+server:
+  port: 8769
+spring:
+  application:
+    name: server-config
+  security:
+    user:
+      name: admin
+      password: 123
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhaoww/sc-demo.git
+          search-paths: config-repo
+#          username: zhaoweiwei233@163.com
+#          password: XXX
+#          skipSslValidation: true
+# 服务注册与发现相关配置
+#eureka:
+#  client:
+#    # 服务注册地址
+#    serviceUrl:
+#      defaultZone: http://admin:123@localhost:8761/eureka/eureka
+#  server:
+#    enable-self-preservation: true

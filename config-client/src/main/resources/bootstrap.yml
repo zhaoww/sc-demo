@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      #配置文件前缀
+      name: spring-cloud-config
+      profile: dev
+      uri: http://admin:123@localhost:8769/
+      label: master

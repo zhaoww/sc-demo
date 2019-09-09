@@ -6,8 +6,12 @@
 ```
 http://localhost:8761/eureka/
 http://localhost:8763/eureka-provider/test/test
+# 远程调用
 http://localhost:8765/service-feign/hello/hello
 http://localhost:8765/service-feign/hello/test
+# config
+http://localhost:8769/spring-cloud-config-dev.properties
+http://localhost:8771/hello
 
 登录:admin/123
 ```
